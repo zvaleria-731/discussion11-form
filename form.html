@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engaged Learning Student Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Engaged Learning Student Feedback Form</h1>
+
+        <p>
+            Share your engaged learning experience to help
+            improve resources and support for UMSI students.
+        </p>
+ 
+        <!-- Uncomment the line below and connect to Formspree -->
+        <!-- <form action="" method="post"> -->
+
+        <fieldset>
+            <legend>Student Information</legend>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email"
+                   name="email" required>
+
+            <label for="program">Academic Program:</label>
+            <select id="program" name="program" required>
+                <option value="">Select your program</option>
+                <option value="bsi">BSI</option>
+                <option value="msi">MSI</option>
+                <option value="mhi">MHI</option>
+                <option value="phd">PhD</option>
+                <option value="other">Other</option>
+            </select>
+
+        </fieldset>
+
+        <div class="radio-group">
+            <p>Current or Most Recent Project Stage:</p>
+
+            <input type="radio" id="preparing"
+                   name="stage" value="preparing" required>
+            <label>Preparing for the Experience</label>
+
+            <input type="radio" id="starting"
+                   name="stage" value="starting">
+            <label for="starting">Starting the Experience</label>
+
+            <input type="radio" id="during"
+                   name="stage" value="during">
+            <label for="during">During the Experience</label>
+
+            <input type="radio" id="ending"
+                   name="stage" value="ending">
+            <label for="ending">Ending the Experience</label>
+
+            <input type="radio" id="after"
+                   name="stage" value="after">
+            <label for="after">After the Experience</label>
+        </div>
+
+        <fieldset>
+            <legend>Your Feedback</legend>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea name="feedback" rows="5" required></textarea>
+
+        </fieldset>
+
+        <input type="submit" value="Submit Feedback">
+
+        </form>
+    </main>
+</body>
+
+</html>
