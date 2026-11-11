@@ -19,22 +19,22 @@
         </p>
  
         <!-- Uncomment the line below and connect to Formspree -->
-        <!-- <form action="" method="post"> -->
+        <form action="https://formspree.io/f/mrpqgqoy" 
+        method="post">
 
         <fieldset>
             <legend>Student Information</legend>
 
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" required>
+            <label for="first-name" required>First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" name="last-name" required>
+            <label for="last-name" required>Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
 
-            <label for="email">Email Address:</label>
-            <input type="text" id="email"
-                   name="email" required>
+            <label for="email" required>Email Address:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label for="program">Academic Program:</label>
+            <label for="program" required>Academic Program:</label>
             <select id="program" name="program" required>
                 <option value="">Select your program</option>
                 <option value="bsi">BSI</option>
@@ -46,35 +46,48 @@
 
         </fieldset>
 
+        
+        <fieldset>
+            <legend>Current or Most Recent Project Stage:</legend>
         <div class="radio-group">
-            <p>Current or Most Recent Project Stage:</p>
-
+            <div class="radio-option">
             <input type="radio" id="preparing"
                    name="stage" value="preparing" required>
-            <label>Preparing for the Experience</label>
+            <label for="preparing">Preparing for the Experience</label>
+            </div>
 
+            <div class="radio-option">
             <input type="radio" id="starting"
                    name="stage" value="starting">
             <label for="starting">Starting the Experience</label>
+            </div>
 
+            <div class="radio-option">
             <input type="radio" id="during"
                    name="stage" value="during">
             <label for="during">During the Experience</label>
+            </div>
 
-            <input type="radio" id="ending"
+            <div class="radio-option">
+            <input type="radio" id="ending" 
                    name="stage" value="ending">
             <label for="ending">Ending the Experience</label>
+            </div>
 
-            <input type="radio" id="after"
+            <div class="radio-option">
+            <input type="radio" id="after" 
                    name="stage" value="after">
             <label for="after">After the Experience</label>
+            </div>
         </div>
+        </fieldset>
+        
 
         <fieldset>
             <legend>Your Feedback</legend>
 
             <label for="feedback">Your Feedback:</label>
-            <textarea name="feedback" rows="5" required></textarea>
+            <textarea name="feedback" id="feedback" rows="5" required></textarea>
 
         </fieldset>
 
